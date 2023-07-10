@@ -14,17 +14,18 @@ class Example{
         // 학번 전산 PG OA 총점 평균, 학점, 판정, 등급
 
         Scanner sc = new Scanner(System.in);
+        
 
-        System.out.println("학번을 입력하시오.");
+        System.out.print("학번: ");
         String student_id = sc.nextLine();
 
-        System.out.println("전산 점수를 입력하시오.");
+        System.out.print("전산 점수: ");
         int subject1 = sc.nextInt();
 
-        System.out.println("PG 점수를 입력하시오.");
+        System.out.print("PG 점수: ");
         int subject2 = sc.nextInt();
 
-        System.out.println("OA 점수를 입력하시오.");
+        System.out.print("OA 점수: ");
         int subject3 = sc.nextInt();
 
         int tot = subject1+subject2+subject3;
@@ -55,8 +56,11 @@ class Example{
 
         String pan = "합격";
         if(avg<80|(subject1<70||subject2<70||subject3<70)) pan = "불합격";
-
-        String grad = Integer.toString((int) avg/20)+"등급";
+        
+        String grad = "";
+        if((int)avg/20>=1) grad += Integer.toString((int) avg/20);
+        else grad += "1";
+        grad += "등급";
 
         System.out.println("학번\t전산\tPG\tOA\t총점\t평균\t학점\t판정\t등급");
         System.out.printf("%s\t%d\t%d\t%d\t%d\t%.2f\t%s\t%s\t%s", student_id, subject1, subject2, subject3, tot, avg, hak, pan, grad);
