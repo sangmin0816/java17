@@ -22,5 +22,11 @@ public class Example1 {
         }
         
         System.out.println("total is "+sum2);
+
+        int sum3 = 0;
+        for(int i=1; i<100; i+=2){
+            sum3+=i;
+        }
+        System.out.println("sum3: "+sum3);
     }
 }
