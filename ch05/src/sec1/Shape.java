@@ -9,7 +9,7 @@ public class Shape {
     public Shape(){
 
     }
-
+    // setMethod: 
     public void setHeight(int height){
         this.height = height;
     }
@@ -23,6 +23,7 @@ public class Shape {
         this.len = len;
     }
 
+    // 멤버 메소드(Memeber Method)
     public double calc_area(){
         if(this.type.equals("square")){
             this.area = this.len*this.len;
