@@ -1,4 +1,4 @@
-package teacher;
+package sec1;
 
 import java.util.Arrays;
 import java.util.Iterator;

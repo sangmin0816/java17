@@ -1,12 +1,9 @@
-package sec1;
+package teacher;
 
 public class Board {
-    public Board() {
-    }
-
     private int no;
     private String title;
-    private String contents;
+    private String content;
     private String author;
     private String resdate;
     private int cnt;
@@ -27,12 +24,12 @@ public class Board {
         this.title = title;
     }
 
-    public String getContents() {
-        return contents;
+    public String getContent() {
+        return content;
     }
 
-    public void setContents(String contents) {
-        this.contents = contents;
+    public void setContent(String content) {
+        this.content = content;
     }
 
     public String getAuthor() {
