@@ -1,4 +1,4 @@
-package sec1;
+package teacher;
 
 public class Board {
     public Board() {

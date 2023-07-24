@@ -1,4 +1,4 @@
-package sec1;
+package teacher;
 
 import java.util.Stack;
 

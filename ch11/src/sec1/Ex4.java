@@ -1,6 +1,5 @@
-package sec1;
+package teacher;
 
-import java.sql.SQLOutput;
 import java.util.ArrayList;
 import java.util.List;
 
