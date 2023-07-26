@@ -1,10 +1,17 @@
 package sec1;
 
+@FunctionalInterface
+interface MyLambda1{
+    // 추상체 // basic
+    void print();
+}
+
 public class LambdaEx1 {
     public static void main(String[] args) {
-        // 람다식 구현체
-        int x = 4;
-        int y = 6;
-        System.out.println(xy);
+        MyLambda1 lamb1 = ()->{
+            System.out.println("안녕하세요, 람다식1입니다.");
+        };
+        lamb1.print();
     }
 }
+
